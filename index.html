@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forex Options AI Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+  <header class="dashboard-header">
+    <h1>Forex Options AI Dashboard</h1>
+    <p>Tracking metrics & AI-driven strategies…</p>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="fx-rates" id="fxRates">
+      <!-- Dynamically filled from API -->
+    </section>
+
+    <section class="info-grid">
+      <div class="macro-events card">
+        <h3>Macro Events & Metrics</h3>
+        <table>
+          <thead>
+            <tr><th>Pair</th><th>Volatility</th><th>Interest Rate Diff</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>EUR/USD</td><td><div class="bar" style="width:62%"></div>6.2%</td><td>-0.75%</td></tr>
+            <tr><td>USD/JPY</td><td><div class="bar" style="width:78%"></div>7.8%</td><td>+2.1%</td></tr>
+            <tr><td>GBP/USD</td><td><div class="bar" style="width:59%"></div>5.9%</td><td>-0.25%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="strategy card">
+        <h3>AI Strategy Assistant</h3>
+        <div class="tabs">
+          <button class="active">Week</button>
+          <button>Day</button>
+          <button>Hour</button>
+        </div>
+        <p class="recommendation"><span class="buy">Buy EUR/USD</span></p>
+        <canvas id="strategyChart" width="300" height="100"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
