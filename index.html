@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forex Options AI Dashboard</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="app">
+    <aside id="sidebar" class="sidebar">
+      <div class="logo">
+        <i class="fas fa-arrow-right"></i>
+        <span>Forex Options</span>
+      </div>
+      <nav>
+        <a href="#" class="active"><i class="fas fa-th-large"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-chart-bar"></i> Forex Rates</a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> Macro Events</a>
+        <a href="#"><i class="fas fa-robot"></i> AI Assistant</a>
+        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="header">
+        <h1>Forex Options AI Dashboard</h1>
+        <p>Track key metrics and get real-time AI-driven strategies</p>
+        <button id="toggleSidebar" class="toggle"><i class="fas fa-bars"></i></button>
+      </header>
+      <section class="rates">
+        <div class="card"><h3>EUR/USD</h3><p>Rate: <span class="highlight">1.0843</span></p></div>
+        <div class="card"><h3>USD/JPY</h3><p>Rate: <span class="highlight red">142.89</span></p></div>
+        <div class="card"><h3>GBP/USD</h3><p>Rate: <span class="highlight green">1.2711</span></p></div>
+      </section>
+      <section class="macro">
+        <h2>Macro Events & Metrics</h2>
+        <table>
+          <thead><tr><th>Pair</th><th>Volatility</th><th>Interest Rate Diff</th><th>Upcoming Event</th></tr></thead>
+          <tbody>
+            <tr><td>EUR/USD</td><td>6.2%</td><td>-0.75%</td><td>ECB Rate Decision</td></tr>
+            <tr><td>USD/JPY</td><td>7.8%</td><td>+2.1%</td><td>BoJ Press Conference</td></tr>
+            <tr><td>GBP/USD</td><td>5.9%</td><td>-0.25%</td><td>UK Inflation Data</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="strategy">
+        <h2>AI Strategy Assistant</h2>
+        <div class="box">Recommended Strategy: Long GBP/USD</div>
+      </section>
+      <section class="simulator">
+        <h2>Trade Simulator</h2>
+        <label class="switch"><input type="checkbox" checked><span class="slider round"></span> AI Assist</label>
+        <div class="row"><label>Pair</label><select><option>EUR/USD</option><option>USD/JPY</option><option>GBP/USD</option></select></div>
+        <div class="row"><label>Amount</label><input type="number" value="10000" /></div>
+        <div class="row"><label>Leverage</label><input type="number" value="10" /></div>
+        <button class="run">Run Simulation</button>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
